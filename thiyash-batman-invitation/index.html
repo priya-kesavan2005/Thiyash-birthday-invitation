@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#08090d" />
+  <title>Thiyash Turns One | Batman Birthday Invitation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="invitation-shell" aria-label="Thiyash's first birthday invitation">
+    <div class="stage" id="stage">
+      <div class="skyline" aria-hidden="true"></div>
+      <div class="moon" aria-hidden="true"></div>
+      <div class="signal" aria-hidden="true"><span>🦇</span></div>
+      <div class="particles" id="particles" aria-hidden="true"></div>
+      <div class="bats" id="bats" aria-hidden="true"></div>
+
+      <section class="scene scene-1 active" data-scene="0">
+        <div class="eyebrow">A LITTLE SUPERHERO</div>
+        <h1 class="hero-title">IS<br><span>ARRIVING...</span></h1>
+        <p class="scene-subtitle">Gotham has a tiny new guardian.</p>
+        <div class="comic-line"></div>
+        <div class="scene-number">01 / 05</div>
+      </section>
+
+      <section class="scene scene-2" data-scene="1">
+        <div class="eyebrow">MEET OUR LITTLE HERO</div>
+        <div class="baby-frame">
+          <div class="halo"></div>
+          <img src="assets/thiyash-baby.png" alt="Thiyash wearing a cute Batman-inspired costume" class="baby-photo" />
+          <div class="photo-shine"></div>
+        </div>
+        <h2 class="name-title">THIYASH</h2>
+        <p class="turning">IS TURNING <strong>ONE</strong></p>
+        <div class="badge">THE CUTEST CAPED CRUSADER</div>
+        <div class="scene-number">02 / 05</div>
+      </section>
+
+      <section class="scene scene-3" data-scene="2">
+        <div class="eyebrow">YOU'RE INVITED TO</div>
+        <div class="invitation-card">
+          <div class="card-bat">🦇</div>
+          <h2>THIYASH'S</h2>
+          <h3>FIRST BIRTHDAY<br />PARTY</h3>
+          <div class="gold-rule"></div>
+          <div class="detail"><span class="detail-icon">◆</span><span>27 SEPTEMBER 2026</span></div>
+          <div class="detail"><span class="detail-icon">◆</span><span>6 PM ONWARDS</span></div>
+          <div class="detail"><span class="detail-icon">◆</span><span>SANGEETHA PARTY HALL</span></div>
+          <p class="card-footer">Come celebrate our little hero.</p>
+        </div>
+        <div class="scene-number">03 / 05</div>
+      </section>
+
+      <section class="scene scene-4" data-scene="3">
+        <div class="eyebrow">A MESSAGE FROM THIYASH</div>
+        <div class="talking-layout">
+          <div class="baby-frame small">
+            <div class="halo"></div>
+            <img src="assets/thiyash-baby.png" alt="Thiyash, the little birthday hero" class="baby-photo" />
+          </div>
+          <div class="speech-bubble" id="speechBubble" aria-live="polite">
+            <span class="bubble-tail"></span>
+            <p id="messageText">Hi everyone!</p>
+          </div>
+        </div>
+        <div class="message-progress"><span id="messageProgress"></span></div>
+        <div class="scene-number">04 / 05</div>
+      </section>
+
+      <section class="scene scene-5" data-scene="4">
+        <div class="eyebrow">THE BAT SIGNAL IS ON</div>
+        <h2 class="final-title">DON'T MISS<br /><span>THIYASH'S</span><br />BIG DAY!</h2>
+        <div class="final-details">
+          <strong>27 SEPTEMBER 2026</strong>
+          <span>6 PM ONWARDS</span>
+          <span>SANGEETHA PARTY HALL</span>
+        </div>
+        <div class="final-bat">🦇</div>
+        <p class="see-you">SEE YOU THERE! 🦇</p>
+        <div class="scene-number">05 / 05</div>
+      </section>
+
+      <div class="top-controls">
+        <button class="icon-btn" id="muteBtn" aria-label="Mute cinematic sound" title="Mute / unmute">🔊</button>
+        <button class="icon-btn" id="replayBtn" aria-label="Replay invitation" title="Replay">↻</button>
+      </div>
+
+      <div class="bottom-controls">
+        <button class="nav-btn" id="prevBtn">← <span>PREV</span></button>
+        <div class="indicators" id="indicators" aria-label="Invitation scenes">
+          <button class="indicator active" data-go="0" aria-label="Go to scene 1"></button>
+          <button class="indicator" data-go="1" aria-label="Go to scene 2"></button>
+          <button class="indicator" data-go="2" aria-label="Go to scene 3"></button>
+          <button class="indicator" data-go="3" aria-label="Go to scene 4"></button>
+          <button class="indicator" data-go="4" aria-label="Go to scene 5"></button>
+        </div>
+        <button class="nav-btn" id="nextBtn"><span>NEXT</span> →</button>
+      </div>
+      <div class="progress-track"><span id="sceneProgress"></span></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
